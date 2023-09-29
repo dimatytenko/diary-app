@@ -1,0 +1,26 @@
+@import "../../scss/vars";
+
+.menu {
+  width: 100%;
+  background-color: $darkGray;
+  padding: 12px 0;
+
+  @media screen and (min-width: $tablet) {
+    width: 300px;
+    min-height: 100vh;
+  }
+
+  & .title {
+    color: $whiteFont;
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  & .descr {
+    color: $greyFont;
+    font-size: 14px;
+    text-align: center;
+  }
+}

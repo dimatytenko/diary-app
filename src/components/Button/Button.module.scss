@@ -1,0 +1,43 @@
+@import "../../scss/vars";
+
+.button {
+  display: block;
+  width: 90px;
+  height: 100%;
+  padding: 6px 12px;
+  color: $whiteFont;
+  background-color: $blue;
+  border: 1px solid $blue;
+  text-transform: capitalize;
+  border-radius: 4px;
+  transition: all $transition;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+  &.disabled {
+    cursor: not-allowed;
+  }
+  &.emptyStyle {
+    color: $alert;
+    background-color: transparent;
+    border: 1px solid $alert;
+
+    &:hover {
+      color: $whiteFont;
+      background-color: $alert;
+    }
+  }
+  &.greenStyle {
+    color: $whiteFont;
+    background-color: $green;
+    border: 1px solid $green;
+
+    &:hover {
+      background-color: $darkGreen;
+    }
+  }
+  &.fullStyle {
+    width: 100%;
+  }
+}
